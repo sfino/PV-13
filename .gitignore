@@ -1,0 +1,9 @@
+# Source CAD files — kept locally, not pushed to GitHub
+STEP/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
