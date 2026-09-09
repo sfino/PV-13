@@ -1,8 +1,8 @@
 # PV-13 Thermal Imaging Monocular
 
-A DIY, helmet-mountable thermal imaging monocular built around the **InfiRay P6-UC (TAC-640)** thermal core, a custom 3D-printed housing, and an ESP32 controller for camera control (zoom, palette, brightness/contrast, NUC).
+A DIY, helmet-mountable thermal imaging monocular built around the **HDANIEE P6-UC** thermal core, a custom 3D-printed housing, and an ESP32 controller for camera control (zoom, palette, brightness/contrast, NUC).
 
-This is a derivative build sharing the same core BOM and control scheme as [ohhenno/Gecko-Thermal-Monocular (P6_640 branch)](https://github.com/ohhenno/Gecko-Thermal-Monocular/tree/P6_640) — full credit to that project for the original design this build is based on. PV-13 uses its own 3D-printed housing (`models/`) and its own ESP32 firmware (`code/`).
+PV-13 has its own 3D-printed housing (`models/`) and its own ESP32 firmware (`code/`).
 
 <p align="center">
   <img src="images/assembled_unit.jpg" width="45%" alt="Assembled PV-13 monocular">
@@ -23,7 +23,7 @@ This is a derivative build sharing the same core BOM and control scheme as [ohhe
 
 ## Features
 
-- InfiRay P6-UC (TAC-640) thermal core, 640x512, 12µm
+- HDANIEE P6-UC thermal core, 640x512, 12µm
 - Digital zoom (4 steps: 10x / 13x / 20x / 40x)
 - 4 color palettes: white hot, black hot, green hot, iron red
 - Manual NUC (shutterless calibration) via button hold
@@ -33,11 +33,9 @@ This is a derivative build sharing the same core BOM and control scheme as [ohhe
 
 ## Bill of Materials
 
-Matches the [Gecko P6_640](https://github.com/ohhenno/Gecko-Thermal-Monocular/tree/P6_640) BOM — this build uses the TAC-640 thermal core variant.
-
 | Component | Notes | Qty | Approx. Price | Source |
 |---|---|---|---|---|
-| InfiRay P6-UC (TAC-640) thermal core | 640x512, 12µm — see `docs/` for datasheets | 1 | $420 | [hdaniee.com](https://www.hdaniee.com/p6-uc-series.html) |
+| HDANIEE P6-UC thermal core | 640x512, 12µm — see `docs/` for datasheets | 1 | $420 | [hdaniee.com](https://www.hdaniee.com/p6-uc-series.html) |
 | 0.39" OLED display | Display + driver board | 1 | $110 | AliExpress |
 | NP18 lens | Optics for the thermal core | 1 | $60 | AliExpress |
 | ESP32-C3 | Main controller | 1 | $1 | AliExpress |
@@ -129,13 +127,12 @@ This targets ESP32 (Arduino framework, using ESP-IDF's `driver/uart`, `driver/gp
 
 ## Documentation
 
-Manufacturer datasheets for the InfiRay P6-UC core are in [`docs/`](docs/):
+Manufacturer datasheets for the HDANIEE P6-UC core are in [`docs/`](docs/):
 - `P6-UC_Specification_V1.0_21x21mm.pdf`
 - `P6_datasheet.pdf`
 
 ## Credits
 
-- Design and control scheme based on [ohhenno/Gecko-Thermal-Monocular](https://github.com/ohhenno/Gecko-Thermal-Monocular) (P6_640 branch)
 - Housing, wiring, and firmware for this build by [sfino](https://github.com/sfino)
 
 ## License
