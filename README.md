@@ -137,4 +137,4 @@ Manufacturer datasheets for the HDANIEE P6-UC core are in [`docs/`](docs/):
 
 ## License
 
-[CC BY-NC 4.0](LICENSE) — Attribution-NonCommercial 4.0 International.
+[All Rights Reserved](LICENSE) — no copying, redistribution, modification, or resale without written permission.
